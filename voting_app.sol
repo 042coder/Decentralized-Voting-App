@@ -1,10 +1,10 @@
-pragma solidity ^0.4.19
+pragma solidity ^0.4.19;
 
 //contract --> like class in any object oriented language
 contract Voting{
 
 // mapping --> like dictionary. Here key(bytes32) --> candidate name and value(uint8) --> votes of candidate
-mapping(bytes32 ==> uint8) public votes
+mapping(bytes32 => uint8) public votes;
 
 //No array of strings allowed in constructor yet by solidity
 bytes32[] public candidates;
