@@ -8,7 +8,8 @@ A scrrenshot of the client is presented below -
 ### Instructions
 
 Get the instance address of the Voting contract instance - 
-`$node
+```
+$node
 > Web3 = require('web3')
 > web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 > code = fs.readFileSync('Voting.sol').toString()
@@ -19,7 +20,8 @@ Get the instance address of the Voting contract instance -
 > byteCode = compiledCode.contracts[':Voting'].bytecode
 > deployedContract = VotingContract.new(['Rama','Nick','Jose'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000})
 > deployedContract.address
-> contractInstance = VotingContract.at(deployedContract.address)`
+> contractInstance = VotingContract.at(deployedContract.address)
+```
 
 Copy the hash output from `> deployedContract.address` and paste in `index.js` -
 `contractInstance = VotingContract.at('0x3e22ae8404a1fb45473c04c9062b3afc90d5cd82')`
