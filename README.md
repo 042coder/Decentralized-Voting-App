@@ -3,7 +3,7 @@ This is a decentralized app made to run on the ethereum virtual machine (EVM). I
 
 ### Screenshot
 A scrrenshot of the client is presented below - 
-![img1](/images/img1.jpg?raw=true)
+![img1](/img/img1.png?raw=true)
 
 ### Instructions
 
